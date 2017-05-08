@@ -1,4 +1,4 @@
-package com.socio_torcedor_core.controller.configuration;
+package com.socio_torcedor_core.configuration.rest_template;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

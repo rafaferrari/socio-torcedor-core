@@ -36,7 +36,7 @@ public class CampanhaServiceImpl implements CampanhaService {
     }
 
     public List<CampanhaDTO> reliable(final Long idTimeCoracao) {
-        logger.error("O Servico campanha-core nao esta disponivel no momento.");
+        logger.error("O Servico campanha-core não está disponível no momento.");
         return new ArrayList<>();
     }
 

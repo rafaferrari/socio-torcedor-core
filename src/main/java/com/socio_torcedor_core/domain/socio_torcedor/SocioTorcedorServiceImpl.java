@@ -20,7 +20,7 @@ public class SocioTorcedorServiceImpl implements SocioTorcedorService {
         try {
             return socioTorcedorRepository.findAll();
         } catch (final Exception e) {
-            logger.error("Erro ao buscar Socios Torcedores.");
+            logger.error("Erro ao buscar Sócios Torcedores.");
             throw new ServiceException(e.getMessage());
         }
     }
@@ -30,7 +30,7 @@ public class SocioTorcedorServiceImpl implements SocioTorcedorService {
         try {
             return Optional.ofNullable(socioTorcedorRepository.findOne(id));
         } catch (final Exception e) {
-            logger.error("Erro ao buscar Socio Torcedor por ID.");
+            logger.error("Erro ao buscar Sócio Torcedor por ID.");
             throw new ServiceException(e.getMessage());
         }
     }
@@ -40,11 +40,11 @@ public class SocioTorcedorServiceImpl implements SocioTorcedorService {
         try {
             final Optional<SocioTorcedor> socioTorcedorOpcional = socioTorcedorRepository.findByEmail(socioTorcedor.getEmail());
             if (socioTorcedorOpcional.isPresent()) {
-                throw new ServiceException("Socio Torcedor ja existente pelo email informado.");
+                throw new ServiceException("Sócio Torcedor já existente pelo email informado.");
             }
             return Optional.of(socioTorcedorRepository.save(socioTorcedor));
         } catch (final Exception e) {
-            logger.error("Erro ao Salvar/Inserir um Socio Torcedor.");
+            logger.error("Erro ao Salvar/Inserir um Sócio Torcedor.");
             throw new ServiceException(e.getMessage());
         }
     }
@@ -54,7 +54,7 @@ public class SocioTorcedorServiceImpl implements SocioTorcedorService {
         try {
             socioTorcedorRepository.delete(id);
         } catch (final Exception e) {
-            logger.error(String.format("Erro ao Remover um Socio Torcedor pelo ID: %s", id));
+            logger.error(String.format("Erro ao Remover um Sócio Torcedor pelo ID: %s", id));
             throw new ServiceException(e.getMessage());
         }
     }
