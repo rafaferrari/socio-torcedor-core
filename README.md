@@ -1,6 +1,6 @@
 # socio-torcedor-core
 
-Servico responsavel pelo gerenciamento de Socios Torcedores.
+Serviço responsável pelo gerenciamento de Socios Torcedores.
 
 # Tecnologias utilizadas neste projeto
 
@@ -18,14 +18,17 @@ Servico responsavel pelo gerenciamento de Socios Torcedores.
 # Forma de Uso
 
 - Clonar este repositorio
-- Instalar [Gradle](https://gradle.org).
+- Instalar o [Gradle](https://gradle.org).
 - Inicializar o servico
 - API do Swagger: 
 ```bash
 http://localhost:8081/swagger-ui.html
 ```
-- Para rodar os testes, executar: "clean test jacocoTestReport"
-- Caso seja necessario alterar a porta do servico, acessar o arquivo application.yml e alterar a propriedade abaixo:
+- Para rodar os testes, executar:
+```bash
+clean test jacocoTestReport
+```
+- Caso seja necessário alterar a porta do serviço, acessar o arquivo application.yml e alterar a propriedade abaixo:
 ```bash
 server.port: 8081
 ```
